@@ -1,0 +1,6 @@
+export const USERS = 'users'
+export const PARTNERS = 'partners'
+export const OFFERS = 'offers'
+export const ACTIVITIES = 'activities'
+export const OFFER_TYPES = 'offerTypes'
+export const TRANSLATIONS = 'translations'
