@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.13.13",
     "@craco/craco": "^6.1.1",
     "@qonsoll/react-design": "^1.0.14",
     "@react-firebase/auth": "^0.2.10",
@@ -16,6 +17,7 @@
     "craco-alias": "^2.2.0",
     "craco-less": "^1.17.1",
     "env-cmd": "^10.1.0",
+    "feedback-typeform": "git+https://github.com/fractal-academy/feedback-typeform-app.git",
     "firebase": "^8.3.2",
     "generate-password": "^1.6.0",
     "lodash": "^4.17.21",
@@ -62,6 +64,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.12.13",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-babel": "^5.3.0",

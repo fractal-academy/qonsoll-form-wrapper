@@ -2,6 +2,7 @@ const CracoAlias = require('craco-alias')
 const CracoLessPlugin = require('craco-less')
 
 module.exports = {
+  babel: { presets: ['@babel/preset-react'], plugins: [] },
   plugins: [
     {
       plugin: CracoAlias,
