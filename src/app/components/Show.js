@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory, generatePath, useParams } from 'react-router-dom'
-import { FormShow, AnswersContextProvider } from 'feedback-typeform'
+import { FormShow, AnswersContextProvider } from 'feedback-typeform-app/src'
 import { ROUTES_PATHS } from '../constants'
 import firebase from '../services/Firebase'
 

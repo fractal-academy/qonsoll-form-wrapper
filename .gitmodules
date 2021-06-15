@@ -1,0 +1,3 @@
+[submodule "src/modules/feedback-typeform-app"]
+	path = src/modules/feedback-typeform-app
+	url = https://github.com/fractal-academy/feedback-typeform-app.git

@@ -1,11 +1,11 @@
 module.exports = {
-  extends: ['react-app', 'prettier', 'prettier/react'],
+  extends: ['react-app', 'prettier'],
   root: true,
   parser: 'babel-eslint',
   plugins: ['import', 'babel', 'react', 'react-hooks', 'prettier'],
   settings: {
     react: {
-      version: '17'
+      version: '16.9'
     },
     'import/resolver': {
       node: {
@@ -23,7 +23,6 @@ module.exports = {
     'no-return-await': 2,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'react/react-in-jsx-scope': 0,
     'prettier/prettier': [
       'error',
       {

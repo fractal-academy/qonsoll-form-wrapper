@@ -4,7 +4,8 @@
     "paths": {
       "~/*": ["./*"],
       "app/*": ["./app/*"],
-      "domains/*": ["./app/domains/*"]
+      "domains/*": ["./app/domains/*"],
+      "feedback-typeform-app/*": ["./modules/feedback-typeform-app/*"]
     }
   }
 }
