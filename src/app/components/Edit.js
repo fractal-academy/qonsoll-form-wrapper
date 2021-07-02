@@ -21,6 +21,10 @@ function Edit() {
     const path = generatePath(ROUTES_PATHS.FORM_EDIT, { id })
     history.push(path)
   }
+  const onFormResultsShow = (id) => {
+    const path = generatePath(ROUTES_PATHS.FORM_ANSWERS, { id })
+    history.push(path)
+  }
   const t = (txt) => txt
 
   return (
@@ -30,6 +34,7 @@ function Edit() {
         translate={t}
         firebase={firebase}
         actions={{
+          onFormResultsShow: onFormResultsShow,
           onFormShow: onFormShow,
           onFormItemClick: onFormItemClick
         }}

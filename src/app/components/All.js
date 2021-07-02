@@ -17,6 +17,11 @@ function All() {
     const path = generatePath(ROUTES_PATHS.FORM_EDIT, { id })
     history.push(path)
   }
+  const onFormResultsShow = (id) => {
+    const path = generatePath(ROUTES_PATHS.FORM_ANSWERS, { id })
+    history.push(path)
+  }
+
   const t = (txt) => txt
 
   return (
@@ -26,7 +31,8 @@ function All() {
       titleText={t('Wizards')}
       actions={{
         onFormShow: onFormShow,
-        onFormItemClick: onFormItemClick
+        onFormItemClick: onFormItemClick,
+        onFormResultsShow: onFormResultsShow
       }}
       firstLevelHidden
     />

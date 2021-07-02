@@ -2,7 +2,7 @@ import React from 'react'
 import 'antd/dist/antd.css'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import { ROUTES_PATHS } from './constants'
-import { All, Edit, Show } from './components'
+import { All, Edit, Show, Results } from './components'
 
 const App = () => {
   return (
@@ -21,6 +21,15 @@ const App = () => {
         {/* SHOW */}
         <Show />
       </Route>
+
+      <Route
+        exact
+        path={ROUTES_PATHS.FORM_ANSWERS}
+        key={ROUTES_PATHS.FORM_ANSWERS}>
+        {/* ANSWER */}
+        <Results />
+      </Route>
+
       <Route render={() => <Redirect to={ROUTES_PATHS.FORMS_ALL} />} />
     </Switch>
   )
