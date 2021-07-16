@@ -4,7 +4,7 @@ import { ROUTES_PATHS } from '../constants'
 import firebase from '../services/Firebase'
 import { FormAnswers } from 'feedback-typeform-app/src'
 
-function Results() {
+function Answers() {
   // [ADDITIONAL HOOKS]
   const history = useHistory()
   const { id } = useParams()
@@ -40,4 +40,4 @@ function Results() {
   )
 }
 
-export default Results
+export default Answers
