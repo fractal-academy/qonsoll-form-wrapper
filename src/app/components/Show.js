@@ -1,10 +1,8 @@
 import React from 'react'
-import { useHistory, generatePath, useParams } from 'react-router-dom'
-import { FormShow, AnswersContextProvider } from 'feedback-typeform-app/src'
 import { ROUTES_PATHS } from '../constants'
 import firebase from '../services/Firebase'
-import COLLECTIONS from '../../modules/feedback-typeform-app/src/constants/collection'
-import { message } from 'antd'
+import { useHistory, generatePath, useParams } from 'react-router-dom'
+import { FormShow, AnswersContextProvider } from 'feedback-typeform-app/src'
 
 function Show() {
   // [ADDITIONAL_HOOKS]
@@ -24,12 +22,13 @@ function Show() {
     console.log(updatedAnswers)
   }
   const t = (txt) => txt
+
   return (
     <AnswersContextProvider>
       <FormShow
         id={id}
-        firebase={firebase}
         translate={t}
+        firebase={firebase}
         actions={{
           onFormShow: onFormShow,
           onFormItemClick: onFormItemClick,

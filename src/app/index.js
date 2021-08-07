@@ -1,8 +1,9 @@
 import React from 'react'
 import 'antd/dist/antd.css'
-import { Redirect, Route, Switch } from 'react-router-dom'
 import { ROUTES_PATHS } from './constants'
+import '@qonsoll/react-design/dist/styles/styles.css'
 import { All, Edit, Show, Results } from './components'
+import { Redirect, Route, Switch } from 'react-router-dom'
 
 const App = () => {
   return (
