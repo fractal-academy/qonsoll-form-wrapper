@@ -1,7 +1,7 @@
 import React from 'react'
-import 'antd/dist/antd.css'
 import { ROUTES_PATHS } from './constants'
 import '@qonsoll/react-design/dist/styles/styles.css'
+import '../styles/style.css'
 import { All, Edit, Show, Results } from './components'
 import { Redirect, Route, Switch } from 'react-router-dom'
 
