@@ -9,7 +9,7 @@ Current project can be used as module in other projects.
 
 ### How to run app localy for further changes
 
-Pull the project using folowing command:
+Pull the project using following command:
 
 ```sh
 git clone --recurse-submodules https://github.com/fractal-academy/submodule_connection-testing
@@ -93,8 +93,8 @@ After cloning existing project to your computer, install all packages:
 npm install
 ```
 
-Make shure that there's present /modules folder and .gitmodules file in your project.
-Go to /modules folder and use following comands:
+Make sure that there's present /modules folder and .gitmodules file in your project.
+Go to /modules folder and use following commands:
 
 ```sh
 git submodule update --init --recursive
@@ -140,7 +140,7 @@ To build your project run following command:
 - run: npm run build:dev
 ```
 
-If you project **does'n run after** following steps, that means that there's not enough memory in docker. Run following command:
+If you project **doesn't run after** following steps, that means that there's not enough memory in docker. Run following command:
 
 ```sh
 - run: CI=false NODE_OPTIONS=--max-old-space-size=8192 npm run build:dev
