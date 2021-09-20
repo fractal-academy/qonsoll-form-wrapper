@@ -1,15 +1,14 @@
+import App from './app'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import App from './app'
-import theme from './styles/theme'
+import '@qonsoll/react-design/dist/styles/vars/index.css'
+import '@qonsoll/react-design/dist/styles/styles.css'
+import './styles/vars.css'
 
 ReactDOM.render(
   <Router>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <App />
   </Router>,
   document.getElementById('root')
 )

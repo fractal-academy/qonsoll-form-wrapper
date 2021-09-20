@@ -2,10 +2,18 @@
   "compilerOptions": {
     "baseUrl": "src/",
     "paths": {
-      "~/*": ["./*"],
-      "app/*": ["./app/*"],
-      "domains/*": ["./app/domains/*"],
-      "feedback-typeform-app/*": ["./modules/feedback-typeform-app/*"]
+      "~/*": [
+        "./*"
+      ],
+      "app/*": [
+        "./app/*"
+      ],
+      "domains/*": [
+        "./app/domains/*"
+      ],
+      "feedback-typeform-app/*": [
+        "./modules/feedback-typeform-app/*"
+      ]
     }
   }
 }
