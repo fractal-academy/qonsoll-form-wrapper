@@ -9,7 +9,7 @@ function Show() {
 
   return (
     <AnswersContextProvider>
-      <FormShow id={id} translate={{}} showHeader firebase={firebase} />
+      <FormShow id={id} translations={{}} showHeader firebase={firebase} />
     </AnswersContextProvider>
   )
 }

@@ -22,7 +22,6 @@ function All() {
       actions={{
         onFormItemClick: onFormItemClick
       }}
-      firstLevelHidden
     />
   )
 }
