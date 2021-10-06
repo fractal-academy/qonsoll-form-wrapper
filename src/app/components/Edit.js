@@ -26,8 +26,9 @@ function Edit() {
     <CurrentQuestionContextProvider>
       <FormEdit
         id={id}
+        showHeader
+        showAnswers
         translate={{}}
-        showHeader={true}
         firebase={firebase}
         actions={{
           onFormResultsShow: onFormResultsShow,
