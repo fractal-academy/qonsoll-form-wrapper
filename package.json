@@ -6,6 +6,7 @@
     "@ant-design/icons": "^4.6.2",
     "@babel/preset-react": "^7.13.13",
     "@craco/craco": "^6.1.1",
+    "@qonsoll/qvideo": "0.0.8",
     "@qonsoll/react-design": "^2.1.65",
     "@react-firebase/auth": "^0.2.10",
     "@testing-library/jest-dom": "^5.11.4",
