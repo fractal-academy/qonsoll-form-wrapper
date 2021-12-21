@@ -87,7 +87,8 @@
 
   /* [ OPTIONAL VARS ] */
   --ql-font-family-main: 'Rubik'; 
-  --ql-body-bg: var(--ql-color-dark-t-lighten6); 
+  --ql-body-bg: var(--ql-color-dark-t-lighten6);
+  --qv-playerRecorder-br: var(--ql-border-radius-lg); 
 }
 
 #root {
