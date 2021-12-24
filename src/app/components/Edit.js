@@ -1,6 +1,7 @@
 import React from 'react'
 import { ROUTES_PATHS } from '../constants'
 import firebase from '../services/Firebase'
+import { Row, Col } from '@qonsoll/react-design'
 import { useHistory, generatePath, useParams } from 'react-router-dom'
 import {
   FormEdit,
@@ -26,7 +27,7 @@ function Edit() {
     <CurrentQuestionContextProvider>
       <FormEdit
         id={id}
-        showHeader
+        // customHeader={<>Header</>}
         showAnswers
         translate={{}}
         firebase={firebase}
