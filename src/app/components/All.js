@@ -16,7 +16,6 @@ function All() {
 
   return (
     <FormsAll
-      translate={{}}
       showHeader={true}
       firebase={firebase}
       actions={{

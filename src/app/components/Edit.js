@@ -1,12 +1,12 @@
-import React from 'react'
-import { ROUTES_PATHS } from '../constants'
-import firebase from '../services/Firebase'
-import { Row, Col } from '@qonsoll/react-design'
-import { useHistory, generatePath, useParams } from 'react-router-dom'
 import {
-  FormEdit,
-  CurrentQuestionContextProvider
+  CurrentQuestionContextProvider,
+  FormEdit
 } from 'feedback-typeform-app/src'
+import { generatePath, useHistory, useParams } from 'react-router-dom'
+
+import { ROUTES_PATHS } from '../constants'
+import React from 'react'
+import firebase from '../services/Firebase'
 
 function Edit() {
   // [ADDITIONAL HOOKS]
@@ -27,9 +27,7 @@ function Edit() {
     <CurrentQuestionContextProvider>
       <FormEdit
         id={id}
-        // customHeader={<>Header</>}
         showAnswers
-        translate={{}}
         firebase={firebase}
         actions={{
           onFormResultsShow: onFormResultsShow,
