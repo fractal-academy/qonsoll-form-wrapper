@@ -22,7 +22,7 @@
     "env-cmd": "^10.1.0",
     "feedback-typeform": "git+https://github.com/fractal-academy/feedback-typeform-app.git",
     "firebase": "^8.6.3",
-    "fuse.js": "^6.4.6",
+    "fuse.js": "^6.6.2",
     "generate-password": "^1.6.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
