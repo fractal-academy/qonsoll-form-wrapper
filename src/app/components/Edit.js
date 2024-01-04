@@ -1,26 +1,21 @@
-import {
-  CurrentQuestionContextProvider,
-  FormEdit
-} from 'feedback-typeform-app/src'
-import { generatePath, useHistory, useParams } from 'react-router-dom'
+import { CurrentQuestionContextProvider, FormEdit } from 'asq/src'
+import { generatePath, useNavigate, useParams } from 'react-router-dom'
 
 import { ROUTES_PATHS } from '../constants'
 import React from 'react'
-import firebase from '../services/Firebase'
+import firebase from 'firebase/compat/app'
 
 function Edit() {
-  // [ADDITIONAL HOOKS]
   const { id } = useParams()
-  const history = useHistory()
+  const navigate = useNavigate()
 
-  // [CLEAR_FUNCTIONS]
-  const onFormShow = (id) => {
+  const handleShowForm = (id) => {
     const path = generatePath(ROUTES_PATHS.FORM_SHOW, { id })
-    history.push(path)
+    navigate(path)
   }
-  const onFormResultsShow = (id) => {
+  const handleShowResults = (id) => {
     const path = generatePath(ROUTES_PATHS.FORM_ANSWERS, { id })
-    history.push(path)
+    navigate(path)
   }
 
   return (
@@ -30,8 +25,8 @@ function Edit() {
         showAnswers
         firebase={firebase}
         actions={{
-          onFormResultsShow: onFormResultsShow,
-          onFormShow: onFormShow
+          onFormResultsShow: handleShowResults,
+          onFormShow: handleShowForm
         }}
       />
     </CurrentQuestionContextProvider>

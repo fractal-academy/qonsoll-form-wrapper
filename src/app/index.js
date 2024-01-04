@@ -1,36 +1,17 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
+
+import { APP_ROUTES } from './allRoutes'
 import React from 'react'
-import { ROUTES_PATHS } from './constants'
-import { All, Edit, Show, Results } from './components'
-import { Redirect, Route, Switch } from 'react-router-dom'
 
 const App = () => {
   return (
-    <Switch>
-      <Route exact path={ROUTES_PATHS.FORMS_ALL} key={ROUTES_PATHS.FORMS_ALL}>
-        {/* ALL */}
-        <All />
-      </Route>
+    <Routes>
+      {APP_ROUTES.map(({ key, path, element }) => (
+        <Route key={key} path={path} element={element} />
+      ))}
 
-      <Route exact path={ROUTES_PATHS.FORM_EDIT} key={ROUTES_PATHS.FORM_EDIT}>
-        {/* EDIT */}
-        <Edit />
-      </Route>
-
-      <Route exact path={ROUTES_PATHS.FORM_SHOW} key={ROUTES_PATHS.FORM_SHOW}>
-        {/* SHOW */}
-        <Show />
-      </Route>
-
-      <Route
-        exact
-        path={ROUTES_PATHS.FORM_ANSWERS}
-        key={ROUTES_PATHS.FORM_ANSWERS}>
-        {/* ANSWER */}
-        <Results />
-      </Route>
-
-      <Route render={() => <Redirect to={ROUTES_PATHS.FORMS_ALL} />} />
-    </Switch>
+      <Route path="/" element={<Navigate to="/forms" />} />
+    </Routes>
   )
 }
 

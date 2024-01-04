@@ -1,11 +1,10 @@
-import { AnswersContextProvider, FormShow } from 'feedback-typeform-app/src'
+import { AnswersContextProvider, FormShow } from 'asq/src'
 
 import React from 'react'
-import firebase from '../services/Firebase'
+import firebase from 'firebase/compat/app'
 import { useParams } from 'react-router-dom'
 
 function Show() {
-  // [ADDITIONAL_HOOKS]
   const { id } = useParams()
 
   // const questions = [

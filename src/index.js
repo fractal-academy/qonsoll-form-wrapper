@@ -1,14 +1,14 @@
 import App from './app'
+import { BrowserRouter } from 'react-router-dom'
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
-import '@qonsoll/react-design/dist/styles/vars/index.css'
-import '@qonsoll/react-design/dist/styles/styles.css'
-import './styles/vars.css'
+import ReactDOM from 'react-dom/client'
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 )

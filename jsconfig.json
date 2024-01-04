@@ -11,8 +11,8 @@
       "domains/*": [
         "./app/domains/*"
       ],
-      "feedback-typeform-app/*": [
-        "./modules/feedback-typeform-app/*"
+      "asq/*": [
+        "./modules/qonsoll-form/*"
       ]
     }
   }

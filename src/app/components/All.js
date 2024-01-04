@@ -1,17 +1,16 @@
-import React from 'react'
+import { generatePath, useNavigate } from 'react-router-dom'
+
+import { FormsAll } from 'asq/src'
 import { ROUTES_PATHS } from '../constants'
-import firebase from '../services/Firebase'
-import { FormsAll } from 'feedback-typeform-app/src'
-import { useHistory, generatePath } from 'react-router-dom'
+import React from 'react'
+import firebase from 'firebase/compat/app'
 
 function All() {
-  // [ADDITIONAL_HOOKS]
-  const history = useHistory()
+  const navigate = useNavigate()
 
-  // [CLEAR_FUNCTIONS]
-  const onFormItemClick = (id) => {
+  const handleShowForm = (id) => {
     const path = generatePath(ROUTES_PATHS.FORM_EDIT, { id })
-    history.push(path)
+    navigate(path)
   }
 
   return (
@@ -19,7 +18,7 @@ function All() {
       showHeader={true}
       firebase={firebase}
       actions={{
-        onFormItemClick: onFormItemClick
+        onFormItemClick: handleShowForm
       }}
     />
   )
